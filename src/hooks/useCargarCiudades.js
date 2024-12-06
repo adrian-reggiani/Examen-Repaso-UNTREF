@@ -9,8 +9,6 @@ const useCargarCiudades = () => {
     fetch('/datos.json')
       .then(response => response.json())
       .then(datos => setCiudades(datos.ciudades))
-
-    
   }, []);
   return ciudades;  // Retornamos las ciudades cargadas
 };
